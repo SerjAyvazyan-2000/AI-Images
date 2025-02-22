@@ -164,6 +164,7 @@
 }
 
 
+
 .icon-voice {
     font-size: 70px;
     background: var(--aqua);
@@ -172,11 +173,39 @@
     right: -60px;
     padding: 12px 12px;
     pointer-events: none;
-    border: 1px solid;
 
 
 }
 
+
+.btn-hover-icon {
+    transition: .3s;
+    position: absolute;
+    right: -65px;
+    pointer-events: none;
+    width: 70px;
+    height: 70px;
+
+
+}
+
+.active-hover-icon{
+    display: none;
+}
+.btn-hover.active .active-hover-icon {
+   display: block;
+
+}
+.btn-hover.active .btn-hover-icon {
+    width: 30px;
+    height: 30px;
+    right: 10px;
+
+}
+.btn-hover.active .default-icon {
+    display: none;
+
+}
 
 .section {
     margin-top: 160px;
